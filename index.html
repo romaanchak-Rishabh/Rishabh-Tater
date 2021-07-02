@@ -27,6 +27,7 @@
                         <li><a href="#skills">skills</a></li>
                         <li><a href="#projects">projects</a></li>
                         <li><a href="#youtube">youtube</a></li>
+                        <li><a href="#joke">Joke</a></li>
                         <li><a href="#contact">contact</a></li>
                     </ul>
                 </nav>
@@ -35,6 +36,7 @@
         </div>
     </header>
 
+    <!-- about section -->
     <section id="about">
         <div class="text">
             <p>Hey, I'm</p>
@@ -203,6 +205,15 @@
         </div>
     </section>
 
+    <!-- joke section -->
+    <section id="joke">
+        <div class="jokes">
+            <h3>Tired of scrolling?</h3><h3>Here are some jokes!</h3>
+            <div id="joke-joke" class="joke-joke">Joke is loading...</div>
+            <button id="jokebtn" class="btn">NEXT JOKE</button>
+        </div>
+    </section>
+
     <!-- contact section -->
     <section id="contact">
         <h1 class="sec-heading">
@@ -216,6 +227,7 @@
             <a href="https://www.youtube.com/channel/UCxk4kccqpDaIa1E2rNcxSEA"><i class="fab fa-youtube"></i></a>
         </div>
     </section>
+    
     <script>
         var menuList = document.getElementById("menu-list");
         menuList.style.maxHeight = "0px";
@@ -227,6 +239,29 @@
                 menuList.style.maxHeight = "0rem";
             }
         }
+
+        const jokes = document.querySelector("#joke-joke");
+        const jokeBtn = document.querySelector("#jokebtn");
+
+        const generateJokes = () => {
+
+            const setHeader = {
+                headers: {
+                    Accept : "application/json"
+                }
+            }
+
+            fetch('https://icanhazdadjoke.com', setHeader)
+            .then((res) => res.json() )
+            .then((data) => {
+                jokes.innerHTML = data.joke;
+            }).catch((error) => {
+                console.log(error);
+            })
+        }
+
+        jokeBtn.addEventListener('click', generateJokes);
+        generateJokes();
     </script>
 </body>
 </html>
