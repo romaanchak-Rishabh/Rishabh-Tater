@@ -469,6 +469,52 @@ button:hover {
     transform: scale(1.1, 1.1);
 }
 
+/* joke section */
+
+#joke {
+    width: 100%;
+    height: auto;
+    padding-bottom: 10rem;
+    background: linear-gradient(to left, #11998e, #38ef7d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jokes {
+    margin-top: 10rem;
+    padding: 5rem;
+    max-width: 80rem;
+    width: 80%;
+    height: auto;
+    background: white;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.jokes h3 {
+    font-size: 2.5rem;
+    
+}
+
+#joke-joke {
+    font-size: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    font-family: var(--h3-font);
+}
+
+.jokes .btn {
+    font-size: 1.75rem;
+    font-family: var(--font-family);
+    font-weight: 700;
+    background-color: darkorange;
+    color: red;
+}
+
 /* contact section */
 #contact {
     width: 100%;
