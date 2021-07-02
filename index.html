@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css linking -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- styling -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+    <!-- title -->
+    <title>Rishabh Tater</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <a href="/Resume.PDF " target="blank" id="resume">Rishabh Tater</a>
+                <nav>
+                    <ul id="menu-list">
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#education">education</a></li>
+                        <li><a href="#skills">skills</a></li>
+                        <li><a href="#projects">projects</a></li>
+                        <li><a href="#youtube">youtube</a></li>
+                        <li><a href="#contact">contact</a></li>
+                    </ul>
+                </nav>
+                <i class="fas fa-bars" onclick="togglemenu()"></i>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="text">
+            <p>Hey, I'm</p>
+            <h1>Rishabh Tater,</h1>
+            <p>a <span class="bold">Frontend</span> developer</p>
+            <p>and a <span class="bold">Youtuber</span>.</p><br>
+            <div class="about-contact-icons">
+                <a href="https://www.facebook.com/rishabh.tater.9400/"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/rishabhtater14_/"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/romaanchak-Rishabh"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/rishabh-tater-75a92b213/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.youtube.com/channel/UCxk4kccqpDaIa1E2rNcxSEA"><i class="fab fa-youtube"></i></a>
+            </div>
+            <br><br><br><br><br><br>
+            <p id="click-resume">Click on my Name in <span class="bold">Navbar</span><br>
+            to download my Resume.</p>
+        </div>
+        <div class="picture">
+            <img src="me.png" alt="rishabh's-picture">
+        </div>
+    </section>
+
+    <!-- education section -->
+    <section id="education">
+        <h1 class="sec-heading">
+            Education
+        </h1>
+        <div class="edu-card">
+            <div id="college" class="edu">
+                <i class="fa fa-graduation-cap"></i>
+                <h3>B.Tech. (CSE)</h3><br><br>
+                <p>
+                    <span class="add">Guru Gobind Singh Indraprastha University</span><br><br>
+                    2019 - Present<br>
+                    CGPA - 8.8<br><br>
+                    Coursework: Data Structures and Algorithms, Objected Oriented Programming, Computer Graphics, and Database Management System
+                </p>
+            </div>
+            <div id="twelth" class="edu">
+                <i class="fa fa-school"></i>
+                <h3>Class XII</h3><br><br>
+                <p>
+                    <span class="add">Bhai Parmanand VidyaMandir</span><br><br>
+                    2018 - 2019<br>
+                    Percentage - 90.4%<br><br>
+                    CBSE<br>
+                    AISCEE
+                </p>
+            </div>
+            <div id="tenth" class="edu">
+                <i class="fa fa-book-reader"></i>
+                <h3>Class X</h3><br><br>
+                <p>
+                    <span class="add">St. John's Academy</span><br><br>
+                    2016 - 2017<br>
+                    CGPA - 9.4<br><br>
+                    CBSE<br>
+                    AISCEE
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- skill section -->
+    <section id="skills">
+        <h1 class="sec-heading">
+            Skills
+        </h1>
+        <div class="skill-sec">
+            <h2>Programming Languages</h2>
+            <div class="icons">
+                <img src="https://img.icons8.com/color/48/000000/c-programming.png"/>
+                <img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"/>
+                <img src="https://img.icons8.com/color/48/000000/python--v1.png"/>
+                <img src="https://img.icons8.com/color/48/000000/html-5--v1.png"/>
+                <img src="https://img.icons8.com/color/48/000000/css3.png"/>
+                <img src="https://img.icons8.com/color/48/000000/javascript--v1.png"/>
+            </div>
+        </div>
+        <div class="skill-sec">
+            <h2>Softwares</h2>
+            <div class="icons">
+                <img src="https://img.icons8.com/color/48/000000/git.png"/>
+                <img src="https://img.icons8.com/fluent/48/000000/matlab.png"/>
+                <img src="https://img.icons8.com/color/48/000000/kinemaster.png"/>
+                <img src="https://img.icons8.com/color/48/000000/microsoft-office-2019.png"/>
+            </div>
+        </div>
+        <div class="skill-sec">
+            <h2>Industry Knowledge</h2>
+            <h3>Frontend Web development</h3>
+            <div class="progress">
+                <div class="progress-done" id="webd">
+                    90%
+                </div>
+            </div>
+            <h3>Competitive Coding</h3>
+            <div class="progress">
+                <div class="progress-done" id="cc">
+                    55%
+                </div>
+            </div>
+            <h3>Data Structures</h3>
+            <div class="progress">
+                <div class="progress-done" id="ds">
+                    70%
+                </div>
+            </div>
+            <h3>Algorithms</h3>
+            <div class="progress">
+                <div class="progress-done" id="algo">
+                    60%
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h1 class="sec-heading">
+            Projects
+        </h1>
+        <div class="project-cards">
+            <a href="https://codepen.io/romaanchak-Rishabh/pen/jOmPwKv" target="blank">
+                <div class="project-card">
+                    <div class="imgbx">
+                        <img src="img1.png" alt="online-grocery-shop">
+                    </div>
+                    <div class="content">
+                        <h3>Online Grocery Shop</h3>
+                    </div>
+                </div>
+            </a>
+            <a href="https://codepen.io/romaanchak-Rishabh/pen/yLMxRKZ" target="blank">
+                <div class="project-card">
+                    <div class="imgbx">
+                        <img src="img2.png" alt="google-replica">
+                    </div>
+                    <div class="content">
+                        <h3>Google Replica</h3>
+                    </div>
+                </div>
+            </a>
+            <a href="https://codepen.io/romaanchak-Rishabh/pen/RwpYeZK" target="blank">
+                <div class="project-card">
+                    <div class="imgbx">
+                        <img src="img3.png" alt="documentation-page">
+                    </div>
+                    <div class="content">
+                        <h3>Documentation Page</h3>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- youtube section -->
+    <section id="youtube">
+        <h1 class="sec-heading">
+            Youtube
+        </h1>
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/tnhUOXq0Ako" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3 id="channel-link">Click the button below to go to the Channel!</h3>
+            <button type="button"><a href="https://www.youtube.com/channel/UCxk4kccqpDaIa1E2rNcxSEA">romaanchak Risahbh</a></h3>
+        </div>
+    </section>
+
+    <!-- contact section -->
+    <section id="contact">
+        <h1 class="sec-heading">
+            Contact Me
+        </h1>
+        <div class="contact-icons">
+            <a href="https://www.facebook.com/rishabh.tater.9400/"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/rishabhtater14_/"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/romaanchak-Rishabh"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/rishabh-tater-75a92b213/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/channel/UCxk4kccqpDaIa1E2rNcxSEA"><i class="fab fa-youtube"></i></a>
+        </div>
+    </section>
+    <script>
+        var menuList = document.getElementById("menu-list");
+        menuList.style.maxHeight = "0px";
+        function togglemenu() {
+            if(menuList.style.maxHeight == "0rem") {
+                menuList.style.maxHeight = "13rem";
+            }
+            else {
+                menuList.style.maxHeight = "0rem";
+            }
+        }
+    </script>
+</body>
+</html>
